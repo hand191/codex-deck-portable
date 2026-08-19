@@ -1,0 +1,22 @@
+[Unit]
+Description=Codex Deck web interface
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/codex-deck/current
+EnvironmentFile=/etc/codex-deck.env
+Environment=PYTHONUNBUFFERED=1
+Environment=HOME=/root
+Environment=USER=root
+ExecStart=/opt/codex-deck/current/.venv/bin/python /opt/codex-deck/current/codex_web.py
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
