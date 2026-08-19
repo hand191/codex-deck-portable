@@ -444,7 +444,7 @@ class TrustedSsoTests(unittest.TestCase):
                 FakeHandler({"Origin": "https://evil.example"})
             )
         self.assertEqual(payload["instance_id"], "hostinger")
-        self.assertEqual(payload["deck_version"], "2.21.1")
+        self.assertEqual(payload["deck_version"], "2.21.2")
         self.assertEqual(payload["release_id"], self.app.RELEASE_ID)
         self.assertIn(
             (
@@ -3872,7 +3872,7 @@ class TrustedSsoTests(unittest.TestCase):
             'rel="manifest"',
         ):
             self.assertIn(marker, html)
-        self.assertEqual(self.app.APP_VERSION, "2.21.1")
+        self.assertEqual(self.app.APP_VERSION, "2.21.2")
 
     def test_scheduler_parallelizes_independent_workspaces(self):
         scheduler = self.app.JobScheduler(queue_capacity=10, max_running=2)

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.21.2 — 2026-08-19
+
+- Publish the portable source under the MIT License.
+- Identify Codex Deck as an independent, unofficial community project that
+  requires each user to install and authenticate the official Codex CLI with
+  their own account.
+
 ## 2.21.1 — 2026-08-19
 
 - Keep the index response Content-Security-Policy compatible with the documented

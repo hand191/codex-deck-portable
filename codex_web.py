@@ -37,7 +37,7 @@ from codex_runtime import (
 from job_stream import JobStreamHub
 
 
-APP_VERSION = "2.21.1"
+APP_VERSION = "2.21.2"
 HOST = os.environ.get("CODEX_WEB_HOST", "127.0.0.1")
 PORT = int(os.environ.get("CODEX_WEB_PORT", "8787"))
 CODEX_BIN = os.environ.get("CODEX_BIN", "/usr/local/bin/codex")

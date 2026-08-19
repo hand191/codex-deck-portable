@@ -3,7 +3,12 @@
 Codex Deck 把官方 Codex CLI/app-server 包装成一个适合电脑、手机和 iPad 的
 持久化 Web 界面。任务在 VPS 上继续运行，浏览器刷新或临时断网不会丢失对话。
 
-当前源码版本：`v2.21.1`。
+当前源码版本：`v2.21.2`。
+
+> [!NOTE]
+> Codex Deck 是独立的非官方社区项目，与 OpenAI 无隶属、维护或背书关系。
+> 它包装官方 Codex CLI/app-server，使用者需在自己的 VPS 上安装并登录
+> 自己的 OpenAI/Codex 账户。
 
 ## 给朋友部署
 
@@ -24,6 +29,10 @@ Codex Deck 把官方 Codex CLI/app-server 包装成一个适合电脑、手机�
 > 这是个人探索版的高权限配置。不要把 `127.0.0.1` 改成 `0.0.0.0`，也不要
 > 在没有额外确认的情况下公开到互联网。朋友必须使用自己的 OpenAI/Codex
 > 账户登录；你的 `.codex/auth.json`、额度、Token 和历史对话都不在分享包中。
+
+## License
+
+Codex Deck 以 [MIT License](LICENSE) 开源。
 
 ## Technical reference
 
@@ -184,7 +193,7 @@ CODEX_WEB_API_TOKEN_FILE=/var/lib/codex-deck/api-token
 
 ## Version
 
-The current source version is `v2.21.1`. The version is shown beside the Codex
+The current source version is `v2.21.2`. The version is shown beside the Codex
 Deck title, in the HTTP `Server` response header, and in the health-check JSON.
 The sticky header can include a link back to another portal when
 `CODEX_WEB_PORTAL_URL` is configured; otherwise that button is hidden.

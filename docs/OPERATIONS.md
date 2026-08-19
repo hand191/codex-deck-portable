@@ -51,7 +51,7 @@ sudo bash /opt/codex-deck/current/deploy/rollback.sh
 
 ```bash
 sudo bash /opt/codex-deck/current/deploy/rollback.sh \
-  v2.21.1-20260819T120000Z
+  v2.21.2-20260819T120000Z
 ```
 
 回滚只切换源码、venv、CLI 和对应 systemd unit，默认保留当前 SQLite、上传、工作区和 Codex

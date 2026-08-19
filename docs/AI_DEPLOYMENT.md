@@ -8,7 +8,7 @@
 
 ```text
 SOURCE_PATH=<VPS 上源码目录或压缩包的绝对路径>
-EXPECTED_VERSION=2.21.1
+EXPECTED_VERSION=2.21.2
 ACCESS_MODE=ssh
 ```
 
@@ -22,7 +22,7 @@ ACCESS_MODE=ssh
 
 输入：
 SOURCE_PATH=<填写绝对路径>
-EXPECTED_VERSION=2.21.1
+EXPECTED_VERSION=2.21.2
 ACCESS_MODE=<ssh 或 tailscale>
 
 目标配置：Ubuntu 24.04、systemd、root 运行、CODEX_WORKSPACE_ROOT=/、

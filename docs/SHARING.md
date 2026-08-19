@@ -2,8 +2,9 @@
 
 ## 推荐方式
 
-最方便持续更新的是一个新的私有 Git 仓库，只提交当前清理后的源码树，不带
-原私人仓库的历史。一次性分享则发送源码 zip 和它的 SHA-256 文件。
+最方便持续更新的是公开的 portable Git 仓库；只想控制访问时也可以保持私有
+并邀请 collaborator。无论选择哪种可见性，都应只提交当前清理后的源码树，
+不带原私人仓库的历史。一次性分享则发送源码 zip 和它的 SHA-256 文件。
 
 在干净、已提交的源码仓库运行：
 
@@ -17,14 +18,14 @@ bash scripts/package-share.sh /你要保存分享包的目录
 发送给朋友：
 
 ```text
-Codex-Deck-v2.21.1-source.zip
-Codex-Deck-v2.21.1-source.zip.sha256
+Codex-Deck-v2.21.2-source.zip
+Codex-Deck-v2.21.2-source.zip.sha256
 ```
 
 朋友应先执行：
 
 ```bash
-sha256sum -c Codex-Deck-v2.21.1-source.zip.sha256
+sha256sum -c Codex-Deck-v2.21.2-source.zip.sha256
 ```
 
 ## 绝对不要分享
@@ -40,16 +41,14 @@ sha256sum -c Codex-Deck-v2.21.1-source.zip.sha256
 
 ## GitHub
 
-不要直接把带私人部署历史的旧仓库改成 public。可选做法：
+不要直接把带私人部署历史的旧仓库改成 public。推荐做法：
 
-1. 新建空的 private 仓库；
+1. 新建空的 portable 仓库，根据分享范围选择 public 或 private；
 2. 解压分享包；
 3. `git init` 后创建一次全新的初始提交；
-4. 邀请朋友为 collaborator；
-5. 以后以不可变 tag 分享升级。
+4. 以后以不可变 tag 分享升级。
 
 ## 许可状态
 
-当前仓库没有 LICENSE。本分享包适合你明确授权给某位朋友做个人测试，不代表
-允许公开再分发。如果准备公开到 GitHub 或允许二次分发，请先由源码所有者
-选择 MIT、Apache-2.0 或其他许可证；AI 不应替所有者自动决定。
+当前源码以 MIT License 开源，允许使用、修改和再分发，但必须保留版权与
+许可声明。项目是非官方社区封装，与 OpenAI 无隶属、维护或背书关系。

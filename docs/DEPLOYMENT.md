@@ -27,14 +27,14 @@ sudo apt-get install -y ca-certificates curl git openssl python3 python3-venv un
 把源码 zip 和 `.sha256` 文件上传到同一个目录，先验证：
 
 ```bash
-sha256sum -c Codex-Deck-v2.21.1-source.zip.sha256
+sha256sum -c Codex-Deck-v2.21.2-source.zip.sha256
 ```
 
 然后解压并进入目录：
 
 ```bash
-unzip Codex-Deck-v2.21.1-source.zip
-cd codex-deck-v2.21.1
+unzip Codex-Deck-v2.21.2-source.zip
+cd codex-deck-v2.21.2
 ```
 
 ## 3. 安装服务
@@ -157,7 +157,7 @@ sudo bash deploy/diagnose.sh
 至少确认：
 
 - `codex-deck.service` 为 active；
-- `/api/health` 的 `status` 为 `ok`、版本为 `2.21.1`；
+- `/api/health` 的 `status` 为 `ok`、版本为 `2.21.2`；
 - `runtime_details.available` 为 `true`；
 - SDK 与 bundled CLI 版本来自同一份 pinned release；
 - worker 数为 2，三个任务/队列计数均为 0；
